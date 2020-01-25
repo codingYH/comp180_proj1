@@ -27,6 +27,7 @@ public class TestListGraph {
         Assert.assertEquals(false, g.addEdge("c","b"));
         Assert.assertEquals(false, g.addEdge("b","c"));
         Assert.assertEquals(false, g.addEdge("a","d"));
+        Assert.assertEquals(false, g.addEdge("c","d"));
 
     }
 

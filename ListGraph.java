@@ -39,7 +39,7 @@ public class ListGraph implements Graph {
             }
         } catch (NoSuchElementException e) {
             e.printStackTrace();
-            System.out.println(e.getMessage());
+            //System.out.println(e.getMessage());
         }
         return false;
     }
