@@ -35,10 +35,11 @@ public class EdgeGraphAdapter implements EdgeGraph {
             }
         }
 	    return true;
-    } catch (Exception ex) {
+    } catch (BadPath ex) {
         ex.printStackTrace();
         System.out.println(ex.getMessage());
-    }return false;
+        throw ex;
+    }
     }
 
 }

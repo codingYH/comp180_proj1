@@ -53,8 +53,8 @@ public class ListGraph implements Graph {
         } catch (NoSuchElementException e) {
             e.printStackTrace();
             System.out.println(e.getMessage());
+            throw e;
         }
-        return null;
     }
 
     public List<String> pred(String n) throws NoSuchElementException {
@@ -68,8 +68,8 @@ public class ListGraph implements Graph {
         } catch (Exception e) {
             e.printStackTrace();
             System.out.println(e.getMessage());
+            throw e;
         }
-        return null;
     }
 
     public boolean connected(String n1, String n2) throws NoSuchElementException {
@@ -96,6 +96,7 @@ public class ListGraph implements Graph {
         } catch (NoSuchElementException e) {
             e.printStackTrace();
             System.out.println(e.getMessage());
+            throw e;
         }
         return false;               //after catching, have to return
     }
